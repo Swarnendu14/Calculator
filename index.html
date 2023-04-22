@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>CALCULATOR</h1>
+    </div>
+    <div class="container">
+        <div class="display">
+            <input id="screen" type="text" placeholder="0">
+        </div>
+
+        <div class="btns">
+            <div class="row">
+                <button id="ce" onclick="backspc()">CE</button>
+                <button id="fac" onclick="fact()">x!</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button class="btn">%</button>
+                <button id="ac" onclick="screen.value=''">AC</button>
+            </div>
+
+            <div class="row">
+                <button id="sin" onclick="sin()">sin</button>
+                <button id="pi" onclick="pi()">π</button>
+                <button class="btn" id="sev">7</button>
+                <button class="btn" id="eig">8</button>
+                <button class="btn" id="nine">9</button>
+                <button class="btn">÷</button>
+            </div>
+
+            <div class="row">
+                <button id="cos" onclick="cos()">cos</button>
+                <button id="log" onclick="log()">log</button>
+                <button class="btn" id="four">4</button>
+                <button class="btn" id="five">5</button>
+                <button class="btn" id="six">6</button>
+                <button class="btn">×</button>
+            </div>
+
+            <div class="row">
+                <button id="tan" onclick="tan()">tan</button>
+                <button id="sqrt" onclick="sqrt()">√</button>
+                <button class="btn" id="one">1</button>
+                <button class="btn" id="two">2</button>
+                <button class="btn" id="three">3</button>
+                <button class="btn">-</button>
+            </div>
+
+            <div class="row">
+                <button id="e" onclick="e()">e</button>
+                <button id="sqr" onclick="pow()">x <span style="font-size:.75em;position: relative; bottom: .4em; right: .1em;">2</span> </button>
+                <button class="btn" id="zero">0</button>
+                <button class="btn" id="dot">.</button>
+                <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+                <button class="btn">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="./logic.js"></script>
+</body>
+</html>
